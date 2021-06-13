@@ -17,7 +17,6 @@
     --white: hsl(0, 0%, 100%);
 }
 
-
 html {
   font-family: "Spartan", sans-serif;
   font-size: 15px;
@@ -28,9 +27,6 @@ body {
   padding: 0;
 
 }
-/* img {
-  width: 100%;
-} */
 
 .container {
     width: 90vw;
@@ -46,7 +42,6 @@ h1, h2, h3 {
     margin: 0;
 }
 
-
 /* Start Hero Text */
 
 .hero__text {
@@ -61,16 +56,12 @@ h1, h2, h3 {
     color: var(--dark-grayish-magenta);
 }
 
-
 /* End Hero Text */
-
-
 
 /* Start reviews cards */
 
 .hero__stars {
 }
-
 
 .hero__reviews {
     background: var(--light-grayish-magenta);
@@ -86,23 +77,13 @@ h1, h2, h3 {
     margin: .2rem;
 }
 
-
 .hero__reviews__text p {
     text-align: center;
     color: var(--dark-grayish-magenta);
     font-weight: 700;
 }
 
-
-
-
-
-
 /* End reviews cards */
-
-
-
-
 
 /* Start Cards buyer */
 .card {
@@ -111,6 +92,10 @@ h1, h2, h3 {
     border-radius: .5rem;
     margin: 1rem 0;
     color: var(--white);
+}
+
+.buyers {
+    margin-bottom: 5rem;
 }
 
 .card__buyer {
@@ -135,3 +120,97 @@ h1, h2, h3 {
 }
 
 /* End Cards buyer */
+
+/* Desktop */
+
+@media (min-width: 800px) {
+    
+    .container {
+        width: 100vw;
+    }
+
+    .row {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .review-01 {
+        margin-right: 5rem;
+    }
+    .review-02 {
+        margin: 0 2.5rem;
+    }
+    .review-03 {
+        margin-left: 5rem;
+    }
+
+    .hero {
+        margin: 5rem 0;
+    }
+
+    .hero__inner {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .hero__text, .hero__stars {
+        width: 49%;
+    }
+    .hero__text {
+        padding: 0;
+        
+    }
+    .hero__text h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .hero__reviews {
+        display: flex;
+        padding: 0 1rem;
+        
+    }
+    
+    .hero__reviews__stars {
+        align-items: center;
+        width: 40%;
+    }
+    .hero__reviews__text {
+        align-items: center;
+        width: 60%;
+    }
+    .hero__reviews__stars img {
+        margin: .2rem;
+    }
+    
+
+    .hero__reviews__text p {
+        font-size: .9rem;
+    }
+    /* End reviews cards */
+    
+    /* Start Cards buyer Desktop*/
+    .buyer__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+    }
+
+    .card {
+        width: 32%;
+        height: 250px;
+        margin: 0;
+    }
+
+    .card-01 {
+        align-self: flex-start;
+
+    }
+    .card-02 {
+        align-self: center;
+    }
+    .card-03 {
+        align-self: flex-end;
+    }
+    
+/* End Cards buyer Desktop */
