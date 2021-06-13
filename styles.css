@@ -1,0 +1,135 @@
+/* General styles and reset */
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    /* primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+html {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+}
+/* img {
+  width: 100%;
+} */
+
+.container {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+
+/* Start Hero Text */
+
+.hero__text {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.hero__text h1 {
+    color: var(--very-dark-magenta);
+}
+.hero__text p {
+    color: var(--dark-grayish-magenta);
+}
+
+
+/* End Hero Text */
+
+
+
+/* Start reviews cards */
+
+.hero__stars {
+}
+
+
+.hero__reviews {
+    background: var(--light-grayish-magenta);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+.hero__reviews__stars {
+    justify-content: center;
+}
+.hero__reviews__stars img {
+    margin: .2rem;
+}
+
+
+.hero__reviews__text p {
+    text-align: center;
+    color: var(--dark-grayish-magenta);
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* End reviews cards */
+
+
+
+
+
+/* Start Cards buyer */
+.card {
+    background: var(--very-dark-magenta);
+    padding: 2rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    color: var(--white);
+}
+
+.card__buyer {
+    display: flex;
+}
+
+.card__buyer__img, 
+.card__buyer__info {
+    align-items: center;
+    
+}
+.card__buyer__img img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card__buyer__info p {
+    margin: 0;
+    color: var(--soft-pink);
+}
+
+/* End Cards buyer */
